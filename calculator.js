@@ -3,18 +3,39 @@
 class Calculator {
   //write your code here
   constructor () {
+    this.value = 0;
   }
-  add () {
+  add (number) {
+    this.value += number;
+    return this;
   }
-  substract () {
+  substract (number) {
+    this.value -= number;
+    return this;
   }
-  multiply () {
+  multiply (number) {
+    this.value *= number;
+    return this;
   }
-  divide () {
+  divide (number) {
+    this.value /= number;
+    return this;
   }
   square () {
+    this.value = Math.pow(this.value, 2)
+    return this;
   }
   squareRoot () {
+    this.value = Math.sqrt(this.value);
+    return this;
+  }
+  showResult (){
+    console.log(this.value);
+    return this;
+  }
+  clear (){
+    this.value = 0;
+    return this;
   }
 }
 
@@ -25,6 +46,9 @@ class Calculator {
 * - Template Literals
 * - Method Chaining
 */
+let calculator = new Calculator();
+
+calculator.add(5).substract(2).multiply(2).divide(2).square().squareRoot().showResult();
 
 module.exports = {
   Calculator
