@@ -22,20 +22,25 @@ class Calculator {
     return this;
   }
   square (n=1) {
-    this.result = Math.pow(this.result,2)
+    this.result = Math.pow(this.result,2);
     return this;
   }
   squareRoot () {
     this.result = Math.sqrt(this.result);
     return this;
   }
+
+  luasLingkaran () {
+    this.result = Math.PI * this.result * this.result;
+    return this;
+  }
 }
 
 
 let aCalc = new Calculator (2);
-console.log(aCalc.add(1).substract(1).multiply(2).divide(2).square(2).squareRoot().result);
-
-
+let jari = aCalc.add(1).substract(1).multiply(2).divide(2).square(2).squareRoot().result;
+console.log(`Diketahui jari-jari ${jari}`);
+console.log(`luas : ${aCalc.luasLingkaran().result}`);
 
 /** note : you can use several features from ecmascript, such as:
 * - Classes
