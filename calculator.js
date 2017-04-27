@@ -26,14 +26,14 @@ class Calculator {
     return this;
   }
   squareRoot () {
-    this.angka /= this.angka;
+    this.angka = Math.sqrt(this.angka);
     return this;
   }
 }
 
-let hitung = new Calculator(3);
+let hitung = new Calculator(10);
 
-console.log(hitung.add(3).multiply(2).square().squareRoot().angka)
+console.log(hitung.add(3).substract(4).multiply(2).divide(3).square().squareRoot().angka)
 /** note : you can use several features from ecmascript, such as:
 * - Classes
 * - Default Parameters
