@@ -27,13 +27,13 @@ class Calculator {
   }
   squareRoot () {
     this.result = Math.sqrt(this.result);
-    return this.result;
+    return this;
   }
 }
 
 
 let aCalc = new Calculator (2);
-console.log(aCalc.add(1).substract(1).multiply(2).divide(2).square(2).squareRoot());
+console.log(aCalc.add(1).substract(1).multiply(2).divide(2).square(2).squareRoot().result);
 
 
 
