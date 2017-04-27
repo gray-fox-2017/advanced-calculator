@@ -3,18 +3,21 @@
 class Calculator {
   //write your code here
   constructor () {
+    this.result = 0;
   }
-  add () {
+  add (num1, num2) {
+    return num1 + num2;
   }
-  substract () {
+  substract (num1, num2) {
+    return num1 - num2;
   }
-  multiply () {
+  multiply (num1, num2) {
   }
-  divide () {
+  divide (num1, num2) {
   }
-  square () {
+  square (num1, num2) {
   }
-  squareRoot () {
+  squareRoot (num1, num2) {
   }
 }
 
