@@ -33,22 +33,15 @@ class Calculator {
     this.angka = Math.PI * this.square().angka;
     return this;
   }
+  equal () {
+    console.log(this.angka)
+  }
 }
 
 let hitung = new Calculator(10);
 
-// console.log(hitung.add(3).substract(4).multiply(2).divide(3).square().squareRoot().angka)
+hitung.add(3).substract(4).multiply(2).divide(3).square().squareRoot().equal()
 
-// console.log(hitung.add(3).multiply(3).angka);
-
-console.log(hitung.circleArea().angka)
-/** note : you can use several features from ecmascript, such as:
-* - Classes
-* - Default Parameters
-* - Destructured Assignment
-* - Template Literals
-* - Method Chaining
-*/
 
 module.exports = {
   Calculator
