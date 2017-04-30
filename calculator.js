@@ -17,21 +17,17 @@ class Calculator {
     this.AngkaPertama *= angkaKali;
     return this;
   }
-  divide (AngkaBagi = 1) {``
+  divide (AngkaBagi = 1) {
     this.AngkaPertama /= AngkaBagi;
     return this;
   }
   square (AngkaSquare = 1) {
-    this.AngkaPertama = Math.pow(this.AngkaPertama,2);
-    return this;
+      this.AngkaPertama = Math.pow(this.AngkaPertama,2);
+      return this;
   }
-  squareRoot (AngkaRoot = 1) {
-    this.AngkaPertama = Math.sqrt(this.AngkaPertama);
-    return this;
-  }
-  Pi(AngkaPi = 1){
-    Math.pi * AngkaPi;
-    return this;
+  squareRoot () {
+      this.AngkaPertama = Math.sqrt(this.AngkaPertama);
+      return this;
   }
 }
 
@@ -45,7 +41,7 @@ class Calculator {
 
 let menghitung = new Calculator(10);
 
-console.log(menghitung.add(10).AngkaPertama);
+console.log(menghitung.square(10).AngkaPertama);
 
 module.exports = {
   Calculator
