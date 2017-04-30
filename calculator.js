@@ -2,19 +2,32 @@
 
 class Calculator {
   //write your code here
-  constructor () {
+  constructor (AngkaPertama) {
+    this.AngkaPertama = AngkaPertama;
   }
-  add () {
+  add (angkaTambah=0) {
+    this.AngkaPertama += angkaTambah;
+    return this;
   }
-  substract () {
+  substract (angkaKurang = 0) {
+    this.AngkaPertama -= angkaKurang;
+    return this;
   }
-  multiply () {
+  multiply (angkaKali = 1) {
+    this.AngkaPertama *= angkaKali;
+    return this;
   }
-  divide () {
+  divide (AngkaBagi = 1) {
+    this.AngkaPertama /= AngkaBagi;
+    return this;
   }
-  square () {
+  square (AngkaSquare = 1) {
+      this.AngkaPertama = Math.pow(this.AngkaPertama,2);
+      return this;
   }
   squareRoot () {
+      this.AngkaPertama = Math.sqrt(this.AngkaPertama);
+      return this;
   }
 }
 
@@ -25,6 +38,10 @@ class Calculator {
 * - Template Literals
 * - Method Chaining
 */
+
+let menghitung = new Calculator(10);
+
+console.log(menghitung.square(10).AngkaPertama);
 
 module.exports = {
   Calculator
