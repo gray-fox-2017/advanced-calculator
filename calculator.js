@@ -30,7 +30,7 @@ class Calculator {
     return this
   }
   circleArea(){
-    this.num = Math.pow(this.num, 2)
+    this.num = Math.PI*Math.pow(this.num, 2)
     return this
   }
   result() {
@@ -40,7 +40,7 @@ class Calculator {
 
 let myCalculator = new Calculator(2);
 
-console.log(myCalculator.add(5).substract(2).multiply(4).divide(4).square(4).squareRoot().result())
+console.log(myCalculator.add(5).substract(2).multiply(4).divide(4).square(4).squareRoot().circleArea().result())
 /** note : you can use several features from ecmascript, such as:
 * - Classes
 * - Default Parameters
