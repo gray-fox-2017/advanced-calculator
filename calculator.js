@@ -29,6 +29,9 @@ class Calculator {
     this.data = Math.sqrt(this.data);
     return this;
   }
+  display() {
+    console.log(this.data);
+  }
 }
 
 /** note : you can use several features from ecmascript, such as:
@@ -38,6 +41,10 @@ class Calculator {
 * - Template Literals
 * - Method Chaining
 */
+
+let calc = new Calculator(5);
+
+calc.add(5).substract(5).multiply(5).divide(5).squareRoot().square().display();
 
 module.exports = {
   Calculator
