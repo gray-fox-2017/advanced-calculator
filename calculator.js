@@ -29,7 +29,13 @@ class Calculator {
     this.hasil = Math.sqrt(this.hasil)
     return this
   }
+  result() {
+    return this.hasil
+  }
 }
+let tes = new Calculator(1)
+console.log(tes.add(2).substract(2).multiply(3).divide(1).square().squareRoot().result());
+
 
 /** note : you can use several features from ecmascript, such as:
 * - Classes
