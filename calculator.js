@@ -29,11 +29,13 @@ class Calculator {
     this.value = Math.pow(this.value, x);
     return this;
   }
-  squareRoot (x = this) {
-    return Math.sqrt(x);
+  squareRoot (x = this.value) {
+    this.value = Math.sqrt(x);
+    return this;
   }
-  CircleArea (x = 1){
-    return Math.PI*x*x;
+  CircleArea (x = this.value){
+    this.value = Math.PI*x*x;
+    return this;
   }
   print(){
     console.log(this.value)
